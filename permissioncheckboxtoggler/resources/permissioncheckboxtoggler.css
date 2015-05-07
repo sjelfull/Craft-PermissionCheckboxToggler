@@ -1,0 +1,35 @@
+/*body.ltr .indent { margin-left: 0; }
+body.ltr .indent ul { margin-left: 15px; }*/
+.js-permissiontoggler-checkCheckboxes, 
+.js-permissiontoggler-uncheckCheckboxes { 
+    transition: opacity 0.25s ease;
+    background-size: contain;
+    background-color: rgb(218, 90, 71);
+    border: 2px solid rgba(218, 90, 71, 1);
+    border-radius: 50%;
+    display: inline-block; 
+    color: rgba(218, 90, 71, 1); 
+    font-size: 11px; 
+    text-transform: uppercase; 
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    text-indent: -9999em;
+    position: relative;
+    top: 3px;
+    opacity: 0.6;
+}
+.js-permissiontoggler-checkCheckboxes:hover, 
+.js-permissiontoggler-uncheckCheckboxes:hover { 
+    color: rgba(218, 90, 71, 1); 
+    opacity: 1;
+}
+.js-permissiontoggler-checkCheckboxes { 
+    margin-left: 10px; 
+
+}
+
+.js-permissiontoggler-uncheckCheckboxes { 
+    margin-left: 5px; 
+    background-color: transparent;
+}
