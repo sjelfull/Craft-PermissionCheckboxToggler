@@ -15,9 +15,6 @@ class PermissionCheckboxTogglerPlugin extends BasePlugin
 
         if (craft()->userSession->isLoggedIn() && craft()->request->isCpRequest() && ! craft()->request->isAjaxRequest() ) {
 
-            $jsT = json_encode([ craft()->request->getSegment(1) ]);
-            craft()->templates->includeJs($jsT);
-
             $isGroupsPage = craft()->request->getSegment(3) == 'groups';
             $isUsersPage = craft()->request->getSegment(1) === 'myaccount' || (craft()->request->getSegment(1) === 'users' && craft()->request->getSegment(2));
             
